@@ -1,7 +1,6 @@
 import Features from "./Components/Features";
-import Footer from "./Components/Footer";
 import Grid1 from "./Components/Grid1";
-import Grid2 from "./Components/Grid2";
+import Footer from "./Components/Footer";
 import Guy from "./Components/Guy";
 import HeadphoneView from "./Components/HeadphoneView";
 import Home from "./Components/Home";
@@ -16,11 +15,7 @@ export default function App() {
 			<Guy/>
 			<Features/>
 			<HeadphoneView/>
-			<Grid2/>
 			<Footer/>
-
-
-
 		</>
 	);
 }

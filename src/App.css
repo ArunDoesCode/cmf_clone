@@ -1,0 +1,5 @@
+
+.custom-link {
+    @apply text-custom-link hover:text-orange text-xl transition-colors duration-300 uppercase text-sm;
+  }
+  

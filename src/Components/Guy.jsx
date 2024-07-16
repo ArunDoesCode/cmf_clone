@@ -11,19 +11,22 @@ const Guy = () => {
         height: "120vh",
         width: "100%",
       }}
-      class="text-white p-8 flex place-items-end"
+      class="text-white p-8 flex items-end"
     >
-      <article  class =' py-6 w-1/3 '>
-      <h3 class="text-5xl font-light tracking-tighter" style={{ wordSpacing: '0.3em' }}>TUNE IN AND OUT<br/>AS YOU NEED</h3>
-        <p class='pt-6'>
-          With a depth of 42 dB and a bandwidth of up 2900 Hz, CMF Buds block
-          out the unwanted noise. The external HD microphone detects ambient
-          noise, then the internal processor generates inverse sound waves that
-          are emitted through the speakers to mute it. Also supports
-          Transparency Mode so you can tune back in when life calls.
+      <div  class =' p-6 w-1/2 '>
+      <h1 class="text-5xl font-letteraMonoLL">TUNE IN AND OUT<br/>AS YOU NEED</h1>
+        <p class='font-franklinGothicBook text-base pt-6 text-start font-thin'
+        style={{
+          lineHeight: "20.41px",
+        }}>
+          With a depth of 42 dB and a bandwidth of up 2900 Hz, CMF <br/>Buds block
+          out the unwanted noise. The external HD <br/> microphone detects ambient
+          noise, then the internal processor<br/> generates inverse sound waves that
+          are emitted through the<br/>speakers to mute it. Also supports
+          Transparency Mode so you <br/> can tune back in when life calls.
         </p>
 
-      </article>
+      </div>
        
     </div>
   );

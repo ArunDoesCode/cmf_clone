@@ -6,10 +6,13 @@ const NavBar1 = () => {
   return (
     <nav className="flex justify-between items-center pl-2">
       <a href="#">
-        <img src={logo} alt="logo" className="h-24 w-24" />
+        <img src={logo} alt="logo" className="pl-8 h-24 w-24" />
       </a>
 
-      <ul className="flex w-1/2 justify-between font-custom text-lg px-20">
+      <ul className=" text-dark_grey flex w-1/2 justify-between font-custom text-lg font-thin font-letteraMonoLL  px-20"
+      style={{
+        lineHeight: "20px",
+      }}>
         <li>
           <a href="#">Products</a>
         </li>
@@ -50,11 +53,15 @@ const NavBar2 = () => {
   return (
     <nav
       ref={navRef}
-      className={`flex justify-between items-center p-4 transition-all duration-300 ease-in-out 
+      className={`flex justify-between transition-all duration-300 ease-in-out 
 		${isSticky ? "bg-dark_grey" : "bg-half_white"}`}
     >
-      <p className="text-2xl">Buds</p>
-      <ul className="flex w-1/2 justify-between px-8">
+      <h1 className="pl-9 text-2xl">Buds</h1>
+
+      <ul className="w-1/2 text-dark_grey font-letteraMonoLL text-base flex justify-between items-center px-8"
+      style={{
+        lineHeight: "18.144px",
+      }}>
         <li>
           <a href="#">Overview</a>
         </li>
@@ -65,9 +72,9 @@ const NavBar2 = () => {
           <a href="#">Spec</a>
         </li>
         <li>
-          <button className="uppercase bg-orange text-white py-2 px-4 rounded hover:bg-orange-dark">
+        <button className="uppercase bg-orange text-white py-2 px-4 rounded hover:bg-orange-dark">
             Buy Now
-          </button>
+          </button> 
         </li>
       </ul>
     </nav>

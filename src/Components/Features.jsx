@@ -19,9 +19,11 @@ const Features = () => {
 
         <div class="h-1/2 pl-12 pr-32">
           <h3
-            class="text-4xl"
+            class=" font-franklinGothicBook"
             style={{
               color: "#424b54",
+              lineHeight:"39.9px",
+              fontSize:"42px",
             }}
           >
             MORE LISTENING, LESS
@@ -29,9 +31,11 @@ const Features = () => {
             CHARGING
           </h3>
           <p
-            class="pt-4 text-lg"
+            class="pt-4 font-franklinGothicBook font-thin"
             style={{
               color: "#424b54",
+              lineHeight:"23.32px",
+              fontSize: "18px"
             }}
           >
             More of what you love, in less time. A large 45 mAh battery in each
@@ -42,7 +46,7 @@ const Features = () => {
       </div>
 
       <div class="row-span-1 bg-half_white flex flex-col items-center justify-center">
-        <div class='-translate-x-24'>
+        <div class='-translate-x-24 font-franklinGothicBook'>
           <h3 class='text-8xl'>8<span class='text-5xl'>   HOURS</span></h3>
           <p class='text-dark_grey m-2 pt-6 text-start'
           style={{
@@ -61,7 +65,7 @@ const Features = () => {
       </div>
 
       <div class="row-span-1 bg-dark_grey text-white flex flex-col items-center justify-center">
-        <div class='-translate-x-24'>
+        <div class='-translate-x-24 font-franklinGothicBook'>
         <h3 class='text-8xl'>35.5<span class='text-5xl'>   HOURS</span></h3>
         <p class='m-2 pt-6 text-start'
           style={{
