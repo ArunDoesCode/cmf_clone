@@ -13,11 +13,11 @@ const Footer = () => {
       }}
     >
       <div class="flex flex-auto">
-        <div class="bg-green flex-auto" style={{ flexBasis: "30%" }}>
+        <div class="bg-green flex flex-col flex-auto items-center justify-end" style={{ flexBasis: "20%" , height: "100%"}}>
           <img
             src={logo}
             alt="footer-logo"
-            class="object-scale-down h-20 w-auto"
+            class="object-scale-down h-20 w-auto mb-20 mr-20"
           />
         </div>
 

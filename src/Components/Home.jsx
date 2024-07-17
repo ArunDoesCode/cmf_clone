@@ -20,8 +20,8 @@ const Home = () => {
 
   return (
     <div className="bg-half_white flex justify-between">
-      <div className="w-1/3 flex justify-center items-center">
-        <h3 className="font-ndot55 text-2xl uppercase">
+      <div className="relative w-1/3 flex justify-center items-center">
+        <h3 className=" font-ndot55 text-2xl uppercase font-dark_grey">
           BEST-IN-
           <br />
           CLASS FOR
@@ -29,11 +29,11 @@ const Home = () => {
           ANC
         </h3>
 
-        {/* <ul className="text-sm flex mb-10 gap-2">
+        <ul className="pl-8 absolute uppercase text-sm text-dark_grey pt-56 font-letteraMonoLL flex gap-9">
 					<li>C: orange</li>
 					<li>M: pc+abs+metal</li>
 					<li>F: moulded</li>
-				</ul> */}
+				</ul>
       </div>
 
       <div className="flex flex-col items-center w-1/3">
