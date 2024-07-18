@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* nav-bar-start */
+.nav-items{
+    @apply flex justify-between items-center;
+}
+
+.ul-list{
+    @apply  text-dark_grey flex w-1/2 justify-between text-lg font-thin font-letteraMonoLL  px-20;
+}
+
+.ul-list-2{
+    @apply w-1/2 text-dark_grey font-letteraMonoLL text-base flex justify-between items-center px-8;
+}
+
+.btn{
+    @apply uppercase bg-orange text-white py-2 px-4 rounded hover:bg-black;
+}
+/* nav-bar-end */
+
+/* home-styles-start*/
+.home-container-1{
+   @apply relative w-1/3 flex justify-center items-center;
+}
+
+.home-container-2{
+    @apply flex flex-col items-center w-1/3;
+}
+.home-container-3{
+    @apply flex flex-col w-1/3 justify-center;
+}
+
+.home-container-3-heading-1{
+    @apply font-letteraMonoLL text-4xl text-dark_grey;
+}
+
+.home-container-3-heading-2{
+    @apply font-letteraMonoLL text-orange  text-2xl p-2;
+
+}
+
+.home-container-3-para{
+    @apply pt-4 font-letteraMonoLL text-base font-normal;
+}
+
+/* home-styles-end */
+
+
+/* grid-1-start */
+
+.grid-container{
+    @apply grid grid-cols-4 gap-5 bg-white py-4 px-3 h-130vh;
+}
+
+.grid-img{
+    @apply bg-cover bg-center h-full;
+}
+.grid-card-1{
+    @apply relative rounded-xl row-span-2;
+}
+
+.grid-card-1-content{
+    @apply font-franklinGothicBook absolute p-4 z-10;
+}
+
+.grid-card-2{
+    @apply relative rounded-xl;
+}
+.grid-card-2-content{
+    @apply absolute inset-0 flex justify-start items-center p-8 font-franklinGothicBook text-base;
+}
+
+.grid-card-3{
+    @apply relative col-auto row-span-3 rounded-xl;
+}
+.grid-card-3-content{
+    @apply absolute font-franklinGothicBook p-6;
+}
+
+.grid-card-4{
+    @apply relative col-auto row-span-2 rounded-xl;
+}
+
+.grid-card-4-content{
+    @apply absolute font-franklinGothicBook text-white pl-7 mt-2 py-6;
+}
+
+.grid-card-5{
+    @apply relative rounded-xl col-span-1;
+}
+
+.grid-card-5-content{
+    @apply text-white absolute uppercase font-franklinGothicBook text-base p-5;
+}
+
+.grid-card-6{
+   @apply relative row-span-2 rounded-xl;
+}
+
+.grid-card-6-content{
+   @apply absolute font-franklinGothicBook text-white p-4;
+}
+
+.grid-card-7{
+    @apply relative bg-half_white row-span-2 rounded-xl;
+}
+
+.grid-card-7-content{
+    @apply absolute px-14 py-6 z-10;
+}
+
+.grid-card-8{
+    @apply relative row-span-1 text-white rounded-xl;
+}
+
+.grid-card-8-content{
+    @apply absolute font-franklinGothicBook text-base inset-0 flex justify-start items-end p-6;
+}
+
+.grid-card-9{
+    @apply relative rounded-xl;
+}
+
+.grid-card-9-content{
+    @apply absolute font-franklinGothicBook text-base text-white uppercase inset-0 flex justify-center pt-6;
+}
+
+.grid-card-10{
+    @apply relative bg-green rounded-xl;
+}
+
+.grid-card-10-content{
+    @apply absolute inset-0 flex  flex-col justify-end p-8 font-franklinGothicBook text-base;
+}
+.grid-outline{
+    @apply grid grid-cols-2 grid-rows-2;
+
+};
+
+/* grid-1-end */
+
+/* guy-start */
+
+.guy-container{
+    @apply text-white p-8 flex items-end bg-center w-full bg-cover h-130vh;
+}
+
+.guy-container-content{
+    @apply font-franklinGothicBook text-base pt-6 text-start font-thin;
+}
+
+/* guy-end */
+
+/* headphone-view start */
+
+.headphone-container{
+    @apply bg-half_white w-full h-110vh;
+}
+
+.headphone-container-view{
+    @apply flex flex-col items-center h-200 w-full;
+}
+
+.headphone-container-img{
+    @apply object-scale-down h-600 w-600;
+}
+.headphone-container-content{
+    @apply  content-end p-9;
+}
+
+.headphone-container-content-heading{
+    @apply font-letteraMonoLL text-dark_grey uppercase text-5xl font-thin;
+}
+/* headphone-view-end */
+
+
+/* footer-start */
+
+.footer-container{
+    @apply flex w-screen h-60;
+}
+
+.footer-container-1{
+    @apply bg-green flex flex-col flex-auto items-center justify-end h-full;
+}
+
+.footer-logo{
+    @apply object-scale-down h-20 w-auto mb-20 mr-20;
+}
+
+.footer-container-2{
+    @apply bg-dark_grey flex-auto;
+}
+
+.footer-container-3{
+    @apply bg-green flex flex-auto h-1/2 items-center justify-end pr-28;
+}
+
+.footer-icon{
+    @apply text-dark_grey hover:text-white transition-colors duration-200;
+}
+
+.footer-container-4{
+    @apply bg-half_white flex-auto h-1/2;
+}
+
+.footer-link{
+    @apply font-letteraMonoLL text-base hover:text-orange text-dark_grey;
+}
+/* footer-end */

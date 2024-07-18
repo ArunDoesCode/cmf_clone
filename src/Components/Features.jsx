@@ -1,25 +1,24 @@
-import React from "react";
 
 import orange_buds_case_open from "../assets/orange_buds_case_open.png";
 
 const Features = () => {
   return (
     <div
-      class="grid grid-cols-2 grid-rows-2"
+      className="grid-outline"
       style={{
         height: "140vh",
         width: "100%",
       }}
     >
-      <div class="row-span-2 bg-green flex flex-col">
+      <div className="row-span-2 bg-green flex flex-col">
         <img
           src={orange_buds_case_open}
-          class="h-[90%] w-[90%] object-scale-down rounded-xl"
+          className="h-[90%] w-[90%] object-scale-down rounded-xl"
         />
 
-        <div class="h-1/2 pl-12 pr-32">
+        <div className="h-1/2 pl-12 pr-32">
           <h3
-            class=" font-franklinGothicBook"
+            className=" font-franklinGothicBook"
             style={{
               color: "#424b54",
               lineHeight:"39.9px",
@@ -31,7 +30,7 @@ const Features = () => {
             CHARGING
           </h3>
           <p
-            class="pt-4 font-franklinGothicBook font-thin"
+            className="pt-4 font-franklinGothicBook font-thin"
             style={{
               color: "#424b54",
               lineHeight:"23.32px",

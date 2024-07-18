@@ -1,7 +1,8 @@
-import React, { useState } from "react";
 import orange_buds from "../assets/tws_buds_orange.png";
 import black_buds from "../assets/tws_buds_black.png";
 import white_buds from "../assets/tws_buds_white.png";
+import { CiPlay1 } from "react-icons/ci";
+import { useState } from "react";
 
 const imageData = [
   { src: orange_buds, color: "bg-orange" },
@@ -19,26 +20,49 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-half_white flex justify-between">
-      <div className="relative w-1/3 flex justify-center items-center">
-        <h3 className=" font-ndot55 text-2xl uppercase font-dark_grey">
-          BEST-IN-
-          <br />
-          CLASS FOR
-          <br />
-          ANC
-        </h3>
+    <div className="relative bg-half_white flex flex-col">
+      <div className="  flex justify-between">
+        <div className="home-container-1">
+          <h3 className="text-2xl font-dark_grey">
+            BEST-IN-
+            <br />
+            CLASS FOR
+            <br />
+            ANC
+          </h3>
+        </div>
 
-        <ul className="pl-8 absolute uppercase text-sm text-dark_grey pt-56 font-letteraMonoLL flex gap-9">
-					<li>C: orange</li>
-					<li>M: pc+abs+metal</li>
-					<li>F: moulded</li>
-				</ul>
+        <div className="home-container-2">
+          <img
+            src={currentImage}
+            alt="Earbuds"
+            className="object-scale-down h-96"
+          />
+        </div>
+
+        <div className="home-container-3">
+          <div className="flex items-center">
+            <h1 className="home-container-3-heading-1"> BUDS </h1>
+            <h3 className="home-container-3-heading-2">&#x20b9;2,499</h3>
+          </div>
+          <p className="home-container-3-para">
+            42 dB ACTIVE NOISE CANCELLATION <br />
+            HIGH-DEFINITION SOUND POWERED BY DIRAC
+            <br />
+            12.4 MM BIO-FIBRE DRIVER WITH ULTRA BASS 2.0
+            <br />8 HOURS OF NON-STOP MUSIC
+          </p>
+        </div>
       </div>
 
-      <div className="flex flex-col items-center w-1/3">
-        <img src={currentImage} alt="Earbuds" className="h-64 w-64" />
-        <div className="flex mb-10 gap-2">
+      <div className="bottom flex justify-evenly">
+        <ul className="text-sm text-dark_grey font-letteraMonoLL flex gap-9">
+          <li>C: ORANGE</li>
+          <li>M: PC+ABS+METAL</li>
+          <li>F: MOULDED</li>
+        </ul>
+
+        <div className="flex gap-2">
           {imageData.map((image, index) => (
             <button
               key={index}
@@ -49,32 +73,13 @@ const Home = () => {
                     : "border-2 border-red-500"
                   : ""
               }`}
-              onClick={() => changeImage(image.src)}
+              onClick={() => changeImage(image.src, index)}
             ></button>
           ))}
         </div>
+
+       <a href='https://in.cmf.tech/pages/buds' className="text-orange text-4xl"><CiPlay1 /></a>
       </div>
-
-      <div className="flex flex-col w-1/3 justify-center">
-        <h1 class="flex text-4xl text-dark_grey">
-          BUDS
-          <p className="text-orange p-1 font-letteraMonoLL text-xl pl-2">
-            {" "}
-            &#x20b9;2,499
-          </p>
-        </h1>
-
-        <p class="pt-4 font-letteraMonoLL text base font-normal">
-          42 dB ACTIVE NOISE CANCELLATION
-          <br />
-          HIGH-DEFINITION SOUND POWERED BY DIRAC
-          <br />
-          12.4 MM BIO-FIBRE DRIVER WITH ULTRA BASS 2.0
-          <br />8 HOURS OF NON-STOP MUSIC
-        </p>
-      </div>
-
-      <div></div>
     </div>
   );
 };

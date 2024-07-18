@@ -1,24 +1,16 @@
-import React from "react";
 
 import guy from "../assets/guy.png";
 const Guy = () => {
   return (
     <div
       style={{
-        backgroundImage: `url(${guy})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: "120vh",
-        width: "100%",
+        backgroundImage: `url(${guy})`
       }}
-      class="text-white p-8 flex items-end"
+      className="guy-container"
     >
-      <div  class =' p-6 w-1/2 '>
-      <h1 class="text-5xl font-letteraMonoLL">TUNE IN AND OUT<br/>AS YOU NEED</h1>
-        <p class='font-franklinGothicBook text-base pt-6 text-start font-thin'
-        style={{
-          lineHeight: "20.41px",
-        }}>
+      <div  className ='p-6 w-1/2'>
+        <h1 className="text-5xl font-letteraMonoLL">TUNE IN AND OUT<br/>AS YOU NEED</h1>
+        <p className='guy-container-content'>
           With a depth of 42 dB and a bandwidth of up 2900 Hz, CMF <br/>Buds block
           out the unwanted noise. The external HD <br/> microphone detects ambient
           noise, then the internal processor<br/> generates inverse sound waves that

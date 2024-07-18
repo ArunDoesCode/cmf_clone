@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import orange_buds_only from "../assets/orange_buds_only.png";
 import black_buds_only from "../assets/black_buds_only.png";
 import white_buds_only from "../assets/white_buds_only.png";
@@ -19,18 +19,10 @@ const HeadphoneView = () => {
   };
 
   return (
-    <div class='bg-half_white w-full'
-    style={{
-      height:"110vh",
-    }}>
+    <div className='relative headphone-container flex'>
       
-    <div className="flex flex-col items-center"
-    style={{
-      height: "200px",
-      width:"full",
-    }}>
-      <img src={currentImage} alt="Earbuds" className="object-scale-down" 
-      style={{height:"600px", width:"600px"}}/>
+    <div className="absolute headphone-container-view">
+      <img src={currentImage} alt="Earbuds" className="headphone-container-img"/>
       <div className="flex mb-10 gap-2">
         {imageData.map((image, index) => (
             <button
@@ -46,11 +38,13 @@ const HeadphoneView = () => {
           ></button>
         ))}
       </div>
+
     </div>
-    <div class='pl-14 translate-y-64'>
-      <h1 class='font-letteraMonoLL text-dark_grey uppercase text-5xl font-thin'>Easy on the ear</h1>
-      <p class='py-6 leading-5 text-base font-franklinGothicBook'>Designed to fit your ear. Featherlight comfort delivered in a <br/>bold bud shape.</p>
-      <p class='uppercase text-xs text-dark_grey'>{imageData[selectedIndex].text}</p>
+
+    <div className='headphone-container-content'>
+      <h1 className='headphones-container-content-heading'>EASY ON THE EAR</h1>
+      <p className='py-6 font-franklinGothicBook'>Designed to fit your ear. Featherlight comfort delivered in a <br/>bold bud shape.</p>
+      <p className='uppercase text-xs text-dark_grey'>{imageData[selectedIndex].text}</p>
     </div>
    
     </div>

@@ -1,4 +1,3 @@
-import React from "react";
 
 import black_left_earbud from "../assets/black_left_earbud.png";
 import bluetooth_black from "../assets/bluetooth_black.png";
@@ -13,149 +12,127 @@ import game_mode from "../assets/game_mode.png";
 
 const Grid1 = () => {
   return (
-    <div class="grid grid-cols-4 gap-5 bg-white py-4 px-3"
-	style={{
-		height:"130vh",
-	}}>
+    <div
+      className="grid-container"
+    >
+      <div
+        className="grid-card-1 grid-img"
+        style={{
+          backgroundImage: `url(${black_left_earbud})`,
+        }}
+      >
+        <article className="grid-card-1-content">
+          <h1>
+            <span className="text-4xl">42</span>dB
+          </h1>
+          <p className="pt-2"> Active Noise Cancellation with <br />Transparency Mode<sup>1</sup></p>
+        </article>
+      </div>
 
-      <div class="realtive rounded-xl row-span-2"
-	  style={{
-        backgroundImage: `url(${black_left_earbud})`,
-        backgroundPosition: "center",
-		backgroundSize:"cover",
-		height: "100%", 
+      <div
+        className="grid-card-2 grid-img" 
+        style={{
+          backgroundImage: `url(${bluetooth_black})`
+        }}
+      >
+        <p className="grid-card-2-content">
+          BLUETOOTH 5.3 AND <br />FAST PAIR
+        </p>
+      </div>
 
-      }}>
-		<article class='font-franklinGothicBook absolute p-4 z-10'>
-			<h1 ><span class='text-4xl'>42</span>dB</h1>
-		<p class='pt-2'>Active Noise Cancellation with<br/>Transparency Mode<sup>1</sup></p>
-		</article>
-        
+      <div
+        className="grid-card-3 grid-img"
+        style={{
+          backgroundImage: `url(${orange_buds_case})`
+        }}
+      >
+        <article className="grid-card-3-content">
+          <p className="text-4xl font-medium">35.5 <span className="uppercase text-lg">hours</span></p>
+          <p className="text-sm">Total playback</p>
+          <p className="text-4xl font-medium">6.5 <span className="uppercase text-lg">hours</span></p>
+          <p className="text-sm">With 10 minutes of<br/>charge²</p>
+        </article>
+      </div>
+
+      <div
+        className="grid-card-4 grid-img"
+        style={{
+          backgroundImage: `url(${girl})`
+        }}
+      >
+        <article className="grid-card-4-content">
+          <h1 className="text-4xl">4 <span className="text-lg">HD</span></h1>
+          <p className="pt-1">mics with Clear Voice Technology³</p>
+        </article>
       </div>
 
 
-	<div class='relative rounded-xl'
-	style={{
-		backgroundImage: `url(${bluetooth_black})`,
-		backgroundPosition: "center",
-		backgroundSize:"cover",
-		height: "100%", 
-	  }}>
-
-		<p class='absolute inset-0 flex justify-start items-center p-8 font-franklinGothicBook text-base'>BLUETOOTH 5.3 AND <br/>FAST PAIR</p>
-
-	</div>
-
-
-
-      <div class="relative col-auto row-span-3 rounded-xl"
-	  style={{
-		backgroundImage: `url(${orange_buds_case})`,
-		backgroundPosition: "center",
-		backgroundSize:"cover",
-		height: "100%", 
-	  }}>
-
-		<article class='absolute font-franklinGothicBook p-6'>
-			<p class='text-4xl font-medium'>35.5 <span class='uppercase text-lg'>hours</span> </p>
-			<p class='text-sm'>Total playback</p>
-			<p class='text-4xl font-medium'>6.5 <span class='uppercase text-lg'>hours</span> </p>
-			<p class='text-sm'> With 10 minutes of<br/>charge²</p>
-		</article>
-          
+      <div
+        className="grid-card-5 grid-img"
+        style={{
+          backgroundImage: `url(${dirac})`
+        }}
+      >
+        <p className="grid-card-5-content">HIGH-DEFINITION AUDIO TUNED BY DIRAC</p>
       </div>
 
-	  <div class="relative col-auto row-span-2 rounded-xl"
-	  style={{
-		backgroundImage: `url(${girl})`,
-		backgroundPosition: "center",
-		backgroundSize:"cover",
-		height: "100%", 
-	  }}>
-		<article class='absolute font-franklinGothicBook text-white pl-7 mt-2 py-6'>
-			<h1 class='text-4xl'>4 <span class='text-lg'>HD</span></h1>
-			<p class='pt-1'>mics with Clear Voice Technology³</p>
-		</article>
+      <div
+        className="grid-card-6 grid-img"
+        style={{
+          backgroundImage: `url(${bud_detail})`
+        }}
+      >
+        <article className="grid-card-6-content">
+          <h1><span className="text-4xl">12.4</span> mm</h1>
+          <p className="text-base pt-2">Bio-fibre + custom TPU diaphragm</p>
+        </article>
       </div>
-     
 
-
-{/* card-05 */}
-      <div class="relative rounded-xl col-span-1 row-auto"
-	  style={{
-		backgroundImage: `url(${dirac})`,
-		backgroundPosition: "center",
-		backgroundSize:"cover",
-		height: "100%", 
-	  }}>
-		
-			<p class='text-white absolute uppercase font-franklinGothicBook text-base p-5'>HIGH-DEFINITION AUDIO TUNED BY DIRAC</p>		
-	  </div>
-
-	  <div class="relative row-span-2 rounded-xl"
-	  style={{
-		backgroundImage: `url(${bud_detail})`,
-		backgroundPosition: "center",
-		backgroundSize:"cover",
-		height: "100%", 
-	  }}>
-		<article class='absolute font-franklinGothicBook text-white p-4'>
-			<h1><span class='text-4xl'>12.4</span> mm</h1>
-			<p class='text-base pt-2'>Bio-fibre + custom TPU diaphragm</p>
-		</article>
-		
+      <div
+        className="grid-card-7"
+        style={{
+          backgroundImage: `url(${black_buds_only})`,
+          backgroundPosition: "center 60px",
+          backgroundSize: "100%",
+          height: "100%",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <article className=" grid-card-7-content">
+          <h1 className="text-4xl">IP54</h1>
+          <p className="pt-2 text-base">Dust and water resistance⁴</p>
+        </article>
       </div>
-      
-	  <div class="relative bg-half_white row-span-2 rounded-xl"
-	  style={{
-		backgroundImage: `url(${black_buds_only})`,
-		backgroundPosition: "center 60px",
-		backgroundSize:"100%",
-		height: "100%", 
-		backgroundRepeat: 'no-repeat',
-	  }}>
-		<article class=' absolute px-14 py-6 z-10'>
-			<h1 class='text-4xl'>IP54</h1>
-		<p class='pt-2 text-base'>Dust and water resistance⁴</p>
-		</article>
+
+      <div
+        className="grid-card-8 grid-img"
+        style={{
+          backgroundImage: `url(${phone_bottom})`
+        }}
+      >
+        <p className="grid-card-8-content">ULTRA BASS<br />TECHNOLOGY 2.0</p>
       </div>
-     
 
-      <div class="relative row-span-1 text-white rounded-xl"
-	  style={{
-		backgroundImage: `url(${phone_bottom})`,
-		backgroundPosition: "center",
-		backgroundSize:"cover",
-		height: "100%", 
-	  }}>
-		<p class='absolute font-franklinGothicBook text-base inset-0 flex justify-start items-end p-6'>ULTRA BASS<br/>TECHNOLOGY 2.0</p>
+      <div
+        className="grid-card-9 grid-img"
+        style={{
+          backgroundImage: `url(${black_buds_rev})`
+        }}>
+        <h1 className="grid-card-9-content"> DUAL-DEVICE CONNECTION</h1>
+      </div>
 
-		</div>
+      <div
+        className="grid-card-10 grid-img"
+        style={{
+          backgroundImage: `url(${game_mode})`,
+        }}
+      >
+        <div className="grid-card-10-content">
+          <h1>LOW LAG MODE</h1>
+          <p> Nothing X app and Nothing<br />smartphones⁵</p>
+        </div>
+      </div>
 
-      <div class="relative rounded-xl"
-	  style={{
-		backgroundImage: `url(${black_buds_rev})`,
-		backgroundPosition: "center",
-		backgroundSize:"cover",
-		height: "100%", 
-	  }}>
-		<h1 class='absolute font-franklinGothicBook text-base text-white uppercase inset-0 flex justify-center pt-6'>DUAL-DEVICE CONNECTION</h1>
-
-	</div>
-
-      <div class="relative bg-green rounded-xl"
-	  style={{
-		backgroundImage: `url(${game_mode})`,
-		backgroundPosition: "center",
-		backgroundSize:"cover",
-		height: "100%", 
-	  }}>
-		<div class='absolute inset-0 flex  flex-col justify-end p-8 font-franklinGothicBook text-base'>
-			<h1>LOW LAG MODE</h1>
-			<p>Nothing X app and Nothing<br/>smartphones⁵</p>
-		</div>
-	  </div>
-	  
     </div>
   );
 };
